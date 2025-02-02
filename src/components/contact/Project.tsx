@@ -126,7 +126,7 @@ function Project() {
                                 <FormControl isRequired>
                                     <FormLabel fontWeight="semibold">Adres</FormLabel>
                                     <Input size={{ base: 'md', lg: 'lg'}} type="text" placeholder="straatnaam + nummer" _focus={{ borderColor: 'darkred', boxShadow: '0 0 0 1px #00044F' }} value={formData.email} onChange={handleChange} name="email" />
-                                    <FormHelperText>We gebruiken dit om uw identiteit te verifiëren.</FormHelperText>
+                                    <FormHelperText textAlign="left" pl={1}>We gebruiken dit om uw identiteit te verifiëren.</FormHelperText>
                                 </FormControl>
 
                                 <br/><br/>
