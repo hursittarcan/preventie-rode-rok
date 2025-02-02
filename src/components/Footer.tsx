@@ -30,7 +30,7 @@ export const Footer = () => {
                                 <br/>
                                 <Stack spacing="2">
                                     <Text fontWeight="bold" color="#00044F">
-                                        Adres
+                                        Website
                                         <span style={{color: "#801AFB"}}>.</span>
                                     </Text>
                                     <Text color="#00044F">Grote bameriklaan 28, 3511 Kuringen</Text>
