@@ -125,7 +125,7 @@ function Project() {
                                 </FormControl>
                                 <FormControl isRequired>
                                     <FormLabel fontWeight="semibold">Adres</FormLabel>
-                                    <Input size={{ base: 'md', lg: 'lg'}} type="tel" placeholder="straatnaam + nummer" _focus={{ borderColor: 'darkred', boxShadow: '0 0 0 1px #00044F' }} value={formData.phone} onChange={handleChange} name="email" />
+                                    <Input size={{ base: 'md', lg: 'lg'}} type="text" placeholder="straatnaam + nummer" _focus={{ borderColor: 'darkred', boxShadow: '0 0 0 1px #00044F' }} value={formData.email} onChange={handleChange} name="email" />
                                 </FormControl>
 
                                 <br/><br/>
