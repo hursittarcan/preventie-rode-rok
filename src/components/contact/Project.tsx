@@ -169,15 +169,15 @@ function Project() {
                                     <ModalHeader>
                                         <Text fontSize="3xl" textAlign="center" color="#00044F" fontWeight="bold">
                                             Bedankt
-                                            <span style={{ color: '#801AFB' }}>!</span>
+                                            <span style={{ color: 'darkred' }}>!</span>
                                         </Text>
                                     </ModalHeader>
                                     <ModalBody>
                                         <Box textAlign="center">
                                             <Lottie options={defaultOptions} height={300} width={300}/>
                                             <Text mt={4} fontWeight="semibold" color="#00044F">
-                                                We hebben je vraag goed ontvangen
-                                                <span style={{color: '#801AFB'}}>.</span>
+                                                We hebben je aanvraag goed ontvangen, we controleren je gegevens en voegen je z.s.m. toe aan onze Whatsapp groep!
+                                                <span style={{color: 'darkred'}}>.</span>
                                             </Text>
                                         </Box>
                                     </ModalBody>
