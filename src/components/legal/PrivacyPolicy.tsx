@@ -1,7 +1,6 @@
 import {Box, chakra, ChakraProvider, Container, Divider, Text} from '@chakra-ui/react';
 import Header from "../../components/Header.tsx";
 import {customChakraTheme} from "../../styles/CustomChakraTheme.tsx";
-import WhatsAppButton from "../WhatsappButton.tsx";
 import {Footer} from "../Footer.tsx";
 import {Copyright} from "../Copyright.tsx";
 
@@ -60,8 +59,6 @@ function PrivacyPolicy() {
                                 <br/><br/>
                             </Box>
                         </Container>
-
-                        <WhatsAppButton/>
                     </Box>
                 </Box>
                 <Divider/>

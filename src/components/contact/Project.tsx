@@ -21,11 +21,11 @@ import {
 import Header from "../../components/Header.tsx";
 import {customChakraTheme} from "../../styles/CustomChakraTheme.tsx";
 import {FaCheck} from "react-icons/fa";
-import {Footer} from "../Footer.tsx";
-import {Copyright} from "../Copyright.tsx";
 import {useState} from "react";
 import successAnimation from "../success-animation.json";
 import Lottie from "react-lottie";
+import {Copyright} from "../Copyright.tsx";
+import {Footer} from "../Footer.tsx";
 
 function Project() {
     const { isOpen, onOpen, onClose } = useDisclosure();
