@@ -41,7 +41,7 @@ function HeaderContent() {
                     <chakra.a display='block' href="/">
                         <Text style={{ width: "200px"}}
                               fontWeight="bold"
-                              fontSize={{ base: '1.25rem', lg: '1.5rem' }}
+                              fontSize={{ base: '1.5rem', lg: '1.5rem' }}
                         >
                             🏡 <span style={{ color: "darkred"}}>Rode </span>Rok
                         </Text>
