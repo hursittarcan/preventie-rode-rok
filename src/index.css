@@ -1,0 +1,148 @@
+*, html, body {
+    font-family: Poppins, "sans-serif";
+}
+
+p {
+    color: #00044F;
+}
+
+.main-statement-landing-container {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+.main-statement-tabs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #00044F;
+}
+
+.statement-container {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--chakra-radii-md);
+    background: #f8c9ba;
+}
+
+.statement-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.statement-pin {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.statement-reset-button {
+    border: #00044F 2px solid;
+    color: #00044F;
+    margin-right: 15px;
+}
+
+.statement-verify-reset-button {
+    border: #00044F 2px solid;
+    color: #00044F;
+}
+
+.statement-copy-button {
+    background: #00044F;
+    color: white;
+}
+
+.statement-tab-title {
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .main-statement-landing-container, .main-statement-tabs-container {
+        display: none;
+    }
+}
+
+.mobile-statement-container {
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+}
+
+.mobile-statement-container h1 {
+    font-size: 2rem;
+    padding-bottom: 15px;
+    font-family: Poppins, "sans-serif";
+    color: #00044F;
+    white-space: normal;
+    word-wrap: break-word;
+    display: inline-block;
+    width: 100%;
+}
+
+.mobile-statement-container p {
+    color: #00044F;
+    word-wrap: break-word;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    max-height: 20px;
+    max-width: 80px;
+}
+
+.mobile-landing-header {
+    padding-bottom: 15px;
+    color: #00044f;
+}
+
+.header-logo {
+    max-height: 40px;
+}
+
+.statement-tabs-container {
+    width: 1000px;
+}
+
+.statement-landing-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.statement-landing-text-header {
+    padding-bottom: 30px;
+    color: #00044F;
+}
+
+.statement-landing-text-subheader {
+    width: 1000px;
+    color: #00044f;
+}
+
+@media (max-width: 768px) {
+    #CookiebotWidget {
+        position: fixed !important;
+        bottom: 20px !important;
+        z-index: 10000 !important;
+    }
+}
