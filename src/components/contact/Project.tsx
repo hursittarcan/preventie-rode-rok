@@ -32,9 +32,7 @@ function Project() {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
-        phone: '',
-        question: '',
-        contactMethod: []
+        phone: ''
     });
     const [isLoading, setIsLoading] = useState(false);
 
@@ -54,14 +52,13 @@ function Project() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    ...formData,
-                    contactMethod: JSON.stringify(formData.contactMethod)
+                    ...formData
                 }),
             });
 
             if (response.ok) {
                 onOpen(); // Open the modal
-                setFormData({ name: '', email: '', phone: '', question: '', contactMethod: [] });
+                setFormData({ name: '', email: '', phone: '' });
             } else {
                 alert("Error");
                 console.error('Submission error');
@@ -88,7 +85,7 @@ function Project() {
             <>
                 <Header style={{ boxShadow: "var(--chakra-shadows-sm)" }} />
 
-                <Box as='section' pb={{ base: '0', md: '5rem' }} background="gray.50">
+                <Box as='section' pb={{ base: '0', md: '5rem' }}>
                     <Container py={{ base: '60px', lg: '120px'}} maxW='1280px'>
                         <Box maxW='760px' mx='auto' textAlign='center' mb='56px' position='relative'>
                             {/* Heading */}
@@ -120,15 +117,15 @@ function Project() {
                             <VStack spacing={4} mt={10} as="form" onSubmit={handleSubmit}>
                                 <FormControl isRequired>
                                     <FormLabel fontWeight="semibold">Naam</FormLabel>
-                                    <Input size={{ base: 'md', lg: 'lg'}} placeholder="voor- en achternaam" _focus={{ borderColor: '#801AFB', boxShadow: '0 0 0 1px #00044F' }} value={formData.name} onChange={handleChange} name="name" />
+                                    <Input size={{ base: 'md', lg: 'lg'}} placeholder="voor- en achternaam" _focus={{ borderColor: 'darkred', boxShadow: '0 0 0 1px #00044F' }} value={formData.name} onChange={handleChange} name="name" />
                                 </FormControl>
                                 <FormControl isRequired>
                                     <FormLabel fontWeight="semibold">Telefoonnummer</FormLabel>
-                                    <Input size={{ base: 'md', lg: 'lg'}} type="tel" placeholder="+32 456 69 09 10" _focus={{ borderColor: '#801AFB', boxShadow: '0 0 0 1px #00044F' }} value={formData.phone} onChange={handleChange} name="phone" />
+                                    <Input size={{ base: 'md', lg: 'lg'}} type="tel" placeholder="+32 456 69 09 10" _focus={{ borderColor: 'darkred', boxShadow: '0 0 0 1px #00044F' }} value={formData.phone} onChange={handleChange} name="phone" />
                                 </FormControl>
                                 <FormControl isRequired>
                                     <FormLabel fontWeight="semibold">Adres</FormLabel>
-                                    <Input size={{ base: 'md', lg: 'lg'}} type="tel" placeholder="straatnaam + nummer" _focus={{ borderColor: '#801AFB', boxShadow: '0 0 0 1px #00044F' }} value={formData.phone} onChange={handleChange} name="phone" />
+                                    <Input size={{ base: 'md', lg: 'lg'}} type="tel" placeholder="straatnaam + nummer" _focus={{ borderColor: 'darkred', boxShadow: '0 0 0 1px #00044F' }} value={formData.phone} onChange={handleChange} name="email" />
                                 </FormControl>
 
                                 <br/><br/>
@@ -143,7 +140,7 @@ function Project() {
                                     // @ts-ignore
                                     rightIcon={!isLoading && <FaCheck fontSize='0.8em' />}
                                     _hover={{ opacity: 0.7 }}
-                                    isDisabled={isLoading} // Disable the button when loading
+                                    isDisabled={isLoading}
                                 >
                                     {isLoading ? (
                                         <Spinner
