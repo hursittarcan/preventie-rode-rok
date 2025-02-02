@@ -4,7 +4,8 @@ import {
     chakra,
     ChakraProvider,
     Container,
-    FormControl, FormHelperText,
+    FormControl,
+    FormHelperText,
     FormLabel,
     Input,
     Modal,
@@ -14,7 +15,7 @@ import {
     ModalHeader,
     ModalOverlay,
     Spinner,
-    Text, Tooltip,
+    Text,
     useDisclosure,
     VStack
 } from '@chakra-ui/react';
@@ -131,15 +132,13 @@ function Project() {
 
                                 <br/><br/>
                                 <Button
-                                    h={{ base: '3.5rem', lg: '4rem' }}
+                                    h={{ base: '3.25rem', lg: '4rem' }}
                                     px='40px'
                                     minW="150px"
                                     fontSize='1.2rem'
-                                    size='lg'
                                     type="submit"
                                     style={{ background: "black", color: "white" }}
                                     // @ts-ignore
-                                    rightIcon={!isLoading && <FaCheck fontSize='0.8em' />}
                                     _hover={{ opacity: 0.7 }}
                                     isDisabled={isLoading}
                                 >
