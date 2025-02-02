@@ -3,7 +3,6 @@ import Showcase from "./Showcase.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 import CoconoirFashion from "./components/cases/CoconoirFashion.tsx";
 import QuickStart from "../src/components/QuickStart.tsx";
-import Home from "./Home.tsx";
 import Project from "./components/contact/Project.tsx";
 import Quote from "./components/contact/Quote.tsx";
 import Question from "./components/contact/Question.tsx";
@@ -34,7 +33,7 @@ function App() {
             <ScrollToTop />
 
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Project />} />
 
                 <Route path="/cases" element={<Showcase />} />
 

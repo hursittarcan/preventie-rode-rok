@@ -1,12 +1,20 @@
-import {chakra, Flex, HStack, HTMLChakraProps, Icon, IconButton, Image, Link, Menu, MenuButton, MenuItem, MenuList, useDisclosure, useUpdateEffect} from '@chakra-ui/react'
+import {
+    chakra,
+    Flex,
+    HStack,
+    HTMLChakraProps,
+    IconButton,
+    Image,
+    Menu,
+    MenuButton,
+    MenuItem,
+    MenuList,
+    Text,
+    useDisclosure,
+    useUpdateEffect
+} from '@chakra-ui/react'
 import {useScroll} from 'framer-motion'
 import {useEffect, useRef, useState} from 'react'
-import {FaYoutube} from 'react-icons/fa'
-import Logo from '../assets/logo.png'
-import {VersionSwitcher} from './VersionSwitcher.tsx'
-import {GithubIcon} from './icons/GithubIcon.tsx'
-import {DiscordIcon} from './icons/DiscordIcon.tsx'
-import {SponsorButton} from "./SponsorButton.tsx";
 import i18n from "i18next";
 import {Flag, flags} from "../utils/LanguageFlagsDirectory.tsx";
 
@@ -31,55 +39,16 @@ function HeaderContent() {
             <Flex w='100%' h='100%' px='6' align='center' justify='space-between'>
                 <Flex align='center'>
                     <chakra.a display='block' href="/">
-                        <img
-                            src={Logo}
-                            className="header-logo"
-                            alt="Codelab logo"
-                        />
+                        <Text style={{ width: "200px"}}
+                              fontWeight="bold"
+                              fontSize={{ base: '1.25rem', lg: '1.5rem' }}
+                        >
+                            🏡 <span style={{ color: "darkred"}}>Rode </span>Rok
+                        </Text>
                     </chakra.a>
                 </Flex>
 
                 <Flex justify='flex-end' w='100%' align='center' color='gray.400' maxW='1100px'>
-                    <VersionSwitcher
-                        width='auto'
-                        flexShrink={0}
-                        display={{ base: 'none', md: 'flex' }}
-                        marginRight='var(--chakra-space-5)'
-                    />
-                    <HStack spacing='5' display={{ base: 'none', md: 'flex' }}>
-                        <Link isExternal aria-label='Go to Codelab GitHub page' href="https://github.com/thecodelabgroup/gestructureerdemededeling">
-                            <Icon
-                                as={GithubIcon}
-                                display='block'
-                                transition='color 0.2s' w='5' h='5'
-                                _hover={{ color: 'gray.600' }}
-                            />
-                        </Link>
-                        <Link
-                            isExternal
-                            _hover={{ cursor: 'not-allowed' }}
-                            style={{ opacity: 0.6 }}
-                        >
-                            <Icon
-                                as={DiscordIcon}
-                                display='block'
-                                transition='color 0.2s'
-                                w='5'
-                                h='5'
-                                _hover={{ color: 'gray.600' }}
-                            />
-                        </Link>
-                        <Link isExternal href="https://www.youtube.com/@thecodelabgroup">
-                            <Icon
-                                as={FaYoutube}
-                                display='block'
-                                transition='color 0.2s'
-                                w='5'
-                                h='5'
-                                _hover={{ color: 'gray.600' }}
-                            />
-                        </Link>
-                    </HStack>
                     <HStack spacing='5'>
                         <Menu>
                             <MenuButton
@@ -105,10 +74,6 @@ function HeaderContent() {
                                 ))}
                             </MenuList>
                         </Menu>
-                        <SponsorButton
-                            onClick={() => window.open('/portal', '_blank')}
-                            ml='5'
-                        />
                     </HStack>
                 </Flex>
             </Flex>
