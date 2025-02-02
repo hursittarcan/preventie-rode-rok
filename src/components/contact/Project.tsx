@@ -21,7 +21,6 @@ import {
 } from '@chakra-ui/react';
 import Header from "../../components/Header.tsx";
 import {customChakraTheme} from "../../styles/CustomChakraTheme.tsx";
-import {FaCheck} from "react-icons/fa";
 import {useState} from "react";
 import successAnimation from "../success-animation.json";
 import Lottie from "react-lottie";
